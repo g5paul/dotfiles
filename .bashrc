@@ -75,7 +75,7 @@ if [[ $(uname) == "Linux" ]]; then
   if [ -f $HOME/.bash-git-prompt/gitprompt.sh ]; then
     GIT_PROMPT_BIN_PATH=$HOME/.bash-git-prompt
   fi
-  PATH=$PATH:$HOME/.local/bin:$HOME/bin
+  PATH=$PATH:$HOME/.local/bin:$HOME/bin:/home/linuxbrew/.linuxbrew/bin
   export PATH
   if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
