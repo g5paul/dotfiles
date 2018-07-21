@@ -15,6 +15,7 @@ if [[ $(uname) == "Linux" ]]; then
     else
       sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
     fi
+    source ~/.bashrc
     brew list | grep python >/dev/null 2>&1
     PYTHON_CHECK=$?
     if [ $PYTHON_CHECK -eq 0 ]; then
