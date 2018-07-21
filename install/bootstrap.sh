@@ -5,7 +5,7 @@ if [[ $(uname) == "Linux" ]]; then
   if [ -f /etc/debian_version ]; then
     codename="$(lsb_release -c | awk '{print $2}')"
     sudo apt-get update
-    sudo apt-get -y install build-essential
+    sudo apt-get -y install build-essential curl file git
     # sudo apt-get -y install build-essential libffi-dev libssl-dev python-dev \
       # python-minimal python-pip python-setuptools python-virtualenv
     command -v brew >/dev/null 2>&1
